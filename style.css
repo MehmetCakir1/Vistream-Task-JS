@@ -4,6 +4,16 @@
     box-sizing: border-box
 }
 /*NAVBAR*/
+nav{
+    box-shadow: 0px 3px 6px #00000029 !important;
+    padding: 8px 0;
+    /* margin-bottom: 1rem; */
+}
+@media (min-width:1300px) {
+    nav{
+      padding-left: 9rem;
+    }
+}
 .navlinks a{
     color:#232B76 ;
 }
@@ -264,4 +274,8 @@ max-width: 362px;
 .eventCard{
     max-width: 40rem;
     margin: 2rem auto;
+}
+
+footer{
+    margin-top: 6rem !important;
 }
