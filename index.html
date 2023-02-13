@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Vistream Webinar</title>
+</head>
+<body>
+    <nav>
+        <div class=" d-flex gap-3 gap-lg-5 p-3">
+            <div class="d-flex justify-content-between align-items-center logoDiv ">
+            <img src="assets/logo.svg" alt="logo">
+            <i class="fa-solid fa-bars fa-xl d-md-none" id="faBars"></i>
+        </div>
+        <div class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-none fs-6">
+            <a href="/" class="text-decoration-none fw-bold"
+            >HOME</a>
+            <a href="/pages/sessions.html" class="text-decoration-none fw-bold"
+            >SESSIONS</a>
+            <div class="position-relative">
+                <a href="/pages/overview.html" class="text-decoration-none fw-bold " id="overview"
+            >OVERVIEW</a>
+            <div id="modal" class="position-absolute bg-light text-center rounded-3 fs-6 p-2 border border-primary ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem ipsum laudantium saepe iste illo</div>
+            </div>
+            <a href="/pages/schedule.html" class="text-decoration-none fw-bold"
+            >SCHEDULE</a>
+            <a href="/pages/teaser.html" class="text-decoration-none fw-bold"
+            >TEASER</a>
+            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold"
+            >UPCOMING EVENTS</a>
+        </div>
+        </div>
+        
+        <div id="mobileNavbar" class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-md-none py-1 ">
+            <a href="/" class="text-decoration-none fw-bold">HOME</a>
+            <a href="/pages/sessions.html" class="text-decoration-none fw-bold">SESSIONS</a>
+            <a href="/pages/overview.html" class="text-decoration-none fw-bold">OVERVIEW</a>
+            <a href="/pages/schedule.html" class="text-decoration-none fw-bold">SCHEDULE</a>
+            <a href="/pages/teaser.html" class="text-decoration-none fw-bold">TEASER</a>
+            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold">UPCOMING EVENTS</a>
+        </div>
+    </nav>
+    <header class="header m-auto d-flex flex-column flex-lg-row justify-content-center align-items-center">
+        <div class="header-content">
+            <h3 class="fs-6 fs-sm-5 px-1 p-sm-1">NEXT WEBINAR</h3>
+            <h1 class="fs-3 fs-sm-2 fst-italic text-light px-1 p-sm-2">EVENT NAME it amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h1>
+            <h2 class="fs-4 fs-sm-3 p-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</h2>
+            <h2 class="fs-4 fs-sm-3 text-light">Wednesday, 08 March 2023,15:00</h2>
+            <div class="d-flex justify-content-center justify-content-sm-start align-items-center gap-4 countdown-div">
+                <div class="d-flex flex-column justify-content-center align-items-center text-light pb-2 pt-0">
+                    <p class="p-0 m-0 fs-1" id="days"></p>
+                    <p class="p-0 m-0 ">Days</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-light pb-2 pt-0">
+                    <p class="p-0 m-0 fs-1 " id="hours"></p>
+                    <p class="p-0 m-0">Hours</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-light pb-2 pt-0">
+                    <p class="p-0 m-0 fs-1 " id="minutes"></p>
+                    <p class="p-0 m-0">Minutes</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center text-light pb-2 pt-0">
+                    <p class="p-0 m-0 fs-1 " id="seconds"></p>
+                    <p class="p-0 m-0">Seconds</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+            <img src="/assets/loginButton.svg" alt="loginBtn">
+            <img src="/assets/registerButton.svg" alt="registerBtn">
+        </div>
+    </header>
+    <main class="speakers">
+        <h1 class="text-center pt-5 pb-3">SPEAKERS</h1>
+        <div id="btnsDiv" class="d-flex justify-content-center align-items-center gap-1 gap-sm-4 ">
+            <button id="firstBtn" class="activeBtn"
+            >
+            Wednesday, 25 February 2023</button>
+            <button id="secondBtn" class="inactiveBtn"
+            >
+            Wednesday, 26 February 2023</button>
+        </div>
+        <div id="speakersDiv" class="d-flex flex-wrap justify-content-center m-auto mt-5 gap-3  activeDiv">
+        </div>
+        <div id="speakersDivTwo" class="d-flex flex-wrap justify-content-center m-auto mt-5 gap-3 inactiveDiv">
+        </div>
+    </main>
+    <article class="desc mt-5">
+        <div class="m-auto py-2 pb-5">
+        <h1 class="text-center fs-2">WHAT IS VISTREAM WEBINAR PORTAL</h1>
+        <p class="text-center fs-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+        <div class="py-1 m-auto mt-4"></div>
+        </div>
+
+    </article>
+    <div class="d-flex flex-wrap justify-content-center container desc-two">
+        <div class="d-flex align-items-start gap-3 desc-two-childDiv ">
+            <img src="assets/certificate.svg" alt="certificate">
+            <div class="position-relative">
+                <h3>Certified Speakers</h3>
+                <p>Eabore etsu dolore magn aliqua enim ad minim veniam quis nostrud exercitas tion ullamco ipsum laboris.</p>
+                <img src="assets/ellipse.svg" alt="ellipse" class="ellipse position-absolute z-n1 ">
+            </div>
+        </div>
+        <div class="d-flex align-items-start gap-3 desc-two-childDiv">
+            <img src="assets/group.svg" alt="group">
+            <div class="position-relative">
+                <h3>Connecting People</h3>
+                <p>Eabore etsu dolore magn aliqua enim ad minim veniam quis nostrud exercitas tion ullamco ipsum laboris.</p>
+                <img src="assets/ellipse.svg" alt="ellipse" class="ellipse position-absolute z-n1 ">
+            </div>
+        </div>
+        <div class="d-flex align-items-start gap-3 desc-two-childDiv">
+            <img src="assets/certificate.svg" alt="certificate">
+            <div class="position-relative">
+                <h3>Latest Updates</h3>
+                <p>Eabore etsu dolore magn aliqua enim ad minim veniam quis nostrud exercitas tion ullamco ipsum laboris.</p>
+                <img src="assets/ellipse.svg" alt="ellipse" class="ellipse position-absolute z-n1 ">
+            </div>
+        </div>
+    </div>
+    <div class="glide upcomingEvents mt-5  px-3 ">
+        <h1 class="text-center py-3">UPCOMING EVENTS</h1>
+        <div
+          class="glide__track py-3 px-0 overflow-hidden"
+          data-glide-el="track"
+        >
+          <ul id="glideDiv" class="glide__slides d-flex list-unstyled p-0 m-0">
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Monday, 15 February 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Friday, 19 March 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Tuesday, 11 May 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideMoreBtn">
+                    <button class="rounded-4 py-1 px-2">MORE DETAILS COMING SOON</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Thursday, 15 September 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideMoreBtn">
+                    <button class=" rounded-4 py-1 px-2">MORE DETAILS COMING SOON</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Friday, 19 March 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Friday, 19 March 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Wednesday, 19 October 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Tuesday, 11 May 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideMoreBtn">
+                    <button class="rounded-4 py-1 px-2">MORE DETAILS COMING SOON</button>
+                </div>
+            </div>
+           </li>
+           <li class="glide__slide">
+            <div class="glide__slide_div">
+                <h2 class="fs-6  text-center text-light py-3 ">Friday, 19 March 2023</h2>
+                <p class="text-center px-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                <h3 class="text-center">Speaker Name</h3>
+                <div class="d-flex justify-content-center gap-2 align-items-center glideBtns">
+                    <button class="border-0 rounded-4 py-1 px-2">REGISTER</button>
+                    <button class="border-0 rounded-4 py-1 px-2">ADD TO CALENDER</button>
+                </div>
+            </div>
+           </li>
+        </ul>
+    </div>
+    <!-- <div class="glide__arrows" data-glide-el="controls">
+        <button
+            class="glide__arrow glide__arrow--left d-none d-xl-inline-block border-0 bg-transparent left-arrow"
+            data-glide-dir="<"
+          >
+            <i class="fa-solid fa-circle-chevron-left fa-2x"></i>
+          </button>
+          <button
+            class="glide__arrow glide__arrow--right d-none d-xl-inline-block border-0 bg-transparent right-arrow"
+            data-glide-dir=">"
+          >
+            <i class="fa-solid fa-circle-chevron-right fa-2x"></i>
+          </button>
+        </div> -->
+      </div>
+    <footer class="d-flex align-items-center justify-content-between p-3">
+        <img src="assets/footerLogo.svg" alt="footerLogo">
+        <p class="p-0 m-0">Footer Note</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/581c84170e.js" crossorigin="anonymous"></script>
+    <script src="utils/speakersData.js"></script>
+    <script src="utils/upcomingEventsData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 5,
+        breakpoints: {
+          1200: {
+            perView: 4,
+          },
+          1000: {
+            perView: 3,
+          },
+          650: {
+            perView: 2,
+          },
+          420: {
+            perView: 1,
+          },
+        },
+      };
+      new Glide(".glide", config).mount();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

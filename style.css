@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+/*NAVBAR*/
+.navlinks a{
+    color:#232B76 ;
+}
+
+.logoDiv{
+    width: 100vw;
+}
+@media (min-width:768px) {
+    .logoDiv{
+        width: auto;
+    }
+}
+.fa-bars{
+    color: #042164;
+    cursor: pointer;
+}
+#mobileNavbar a{
+    font-size: 12px;
+}
+#modal{
+    top:2rem;
+    left:50%;
+    transform: translateX(-50%);
+    width: 10rem;
+}
+
+/*HEADER*/
+.header{
+    height: 500px;
+    max-width: 1920px;
+    background-image: url("/assets/headerBackground.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+@media (min-width:1400px) {
+    .header{
+        height: 700px;
+    }
+}
+.header-content{
+    max-width: 700px;
+}
+.header-content h3:first-child{
+    color: #042164 !important;
+}
+.header-content h2:not(h2.text-light){
+    color: #232B76 !important;
+}
+.countdown-div div{
+    width: 5rem;
+    height: 5rem;
+    background-color: #232B76;
+}
+@media (max-width:450px) {
+    .countdown-div div{
+        width: 4rem;
+        height: 4rem;
+        background-color: #232B76;
+    }
+    .activeBtn,.inactiveBtn{
+        font-size: 12px !important;
+    }
+}
+
+
+/*SPEAKERS*/
+.speakers>h1{
+    color:#042164;
+}
+.firstBtn{
+    background-color: #232B76;
+    color: #fff;
+    border: 1px solid #232B76;
+}
+.secondBtn{
+    color:#232B76;
+    border: 1px solid #232B76;
+}
+#speakersDiv,#speakersDivTwo{
+    max-width: 1200px;
+}
+.singleSpeaker{
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.singleSpeaker img{
+    object-fit: cover;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.singleSpeaker h2{
+    font-size: 21px;
+    text-align: center;
+    color: #042164;
+    padding: 5px 0;
+}
+.singleSpeaker p{
+    font-size: 15px;
+    color: #333333;
+    text-align: center;
+}
+.singleSpeaker button{
+    width: 6rem;
+    display: block;
+    margin: auto;
+    border: 1px solid #232B76;
+    background-color: #232B76;
+    color: #fff;
+    border-radius: 15px;
+    padding: 3px ;
+}
+
+.activeDiv{
+    display: flex !important;
+}
+.inactiveDiv{
+    display: none !important;
+}
+.activeBtn{
+    background-color: #232B76 !important;
+    border: 1px solid #232B76 !important;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.inactiveBtn{
+    background-color: #fff !important;
+    border: 1px solid #232B76 !important;
+    color: #232B76 !important;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/*DESCRIPTION*/
+.desc{
+color:#232B76;
+background-color: #F7F8FB;
+}
+.desc>div{
+    max-width: 55rem;
+}
+.desc div div{
+    width: 100%;
+    max-width: 436px;
+    background-color: #232B76;
+}
+.desc-two{
+    margin-top: 5rem;
+}
+.desc-two-childDiv{
+max-width: 362px;
+}
+.ellipse{
+    top:-15px;
+    left:-17px;
+}
+
+
+/*UPCOMING EVENTS*/
+
+.upcomingEvents h1{
+    color: #042164;
+}
+
+.glide__slide_div h2{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #232B76;
+    font-size: 20px;
+}
+.glide__slide_div p{
+  height: 9rem;
+  border-bottom: 1px solid grey;
+  color: #042164;
+  font-size: 17px;
+}
+.glide__slide_div h3{
+  color: #009FE3;
+  font-size: 18px;
+  padding:0 0 10px;
+}
+
+.glideBtns button:first-child{
+    background-color: #009FE3;
+    color: #fff;
+    transition: all 1s ease;
+}
+.glideBtns button:first-child:hover{
+    background-color: #042164;
+    color: #fff; 
+}
+.glideBtns button:last-child{
+    background-color: #042164;
+    color: #fff;
+    transition: all 1s ease;
+}
+.glideBtns button:last-child:hover{
+    background-color: #009FE3;
+    color: #fff;
+}
+.glideMoreBtn button{
+    border: 1px solid #1490DF;
+    color: #1490DF;
+    transition: all 1s ease;
+}
+.glideMoreBtn button:hover{
+    border: 1px solid #042164;
+    background-color: #042164;
+    color: #fff;
+}
+
+@media (min-width:1400px) {
+    .glide__slide{
+        margin: 0 2rem !important;
+    }
+}
+
+.registerBtn{
+    background-color: #009FE3;
+    color: #fff;
+    transition: all 1s ease;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+.registerBtn:hover{
+    background-color:#042164;
+}
+.calenderBtn{
+    background-color: #042164;
+    color: #fff;
+    transition: all 1s ease;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+.calenderBtn:hover{
+    background-color:#1490DF;
+}
+.moreBtn{
+    border: 1px solid #1490DF;
+    color: #1490DF;
+    transition: all 1s ease;
+    border-radius: 15px;
+    padding: 5px;
+}
+.moreBtn:hover{
+    background-color: #1490DF;
+    color: #fff;
+}
+
+.eventCard{
+    max-width: 40rem;
+    margin: 2rem auto;
+}

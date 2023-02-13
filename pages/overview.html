@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Vistream Webinar</title>
+</head>
+<body>
+    <nav>
+        <div class=" d-flex gap-3 gap-lg-5 p-3">
+            <div class="d-flex justify-content-between align-items-center logoDiv ">
+            <img src="../assets/logo.svg" alt="logo">
+            <i class="fa-solid fa-bars fa-xl d-md-none" id="faBars"></i>
+        </div>
+        <div class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-none fs-6">
+            <a href="/" class="text-decoration-none fw-bold">HOME</a>
+            <a href="/pages/sessions.html" class="text-decoration-none fw-bold">SESSIONS</a>
+            <a href="/pages/overview.html" class="text-decoration-none fw-bold">OVERVIEW</a>
+            <a href="/pages/schedule.html" class="text-decoration-none fw-bold">SCHEDULE</a>
+            <a href="/pages/teaser.html" class="text-decoration-none fw-bold">TEASER</a>
+            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold">UPCOMING EVENTS</a>
+        </div>
+        </div>
+        
+        <div id="mobileNavbar" class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-md-none py-1 ">
+            <a href="/" class="text-decoration-none fw-bold">HOME</a>
+            <a href="/pages/sessions.html" class="text-decoration-none fw-bold">SESSIONS</a>
+            <a href="/pages/overview.html" class="text-decoration-none fw-bold">OVERVIEW</a>
+            <a href="/pages/schedule.html" class="text-decoration-none fw-bold">SCHEDULE</a>
+            <a href="/pages/teaser.html" class="text-decoration-none fw-bold">TEASER</a>
+            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold">UPCOMING EVENTS</a>
+        </div>
+    </nav>
+    <main class="d-flex justify-content-center align-items-center fs-1 fw-bold ">
+        OVERVIEW
+    </main>
+    <footer class="d-flex align-items-center justify-content-between p-3 position-fixed bottom-0 w-100">
+        <img src="../assets/footerLogo.svg" alt="footerLogo">
+        <p class="p-0 m-0">Footer Note</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/581c84170e.js" crossorigin="anonymous"></script>
+    <script src="utils/speakersData.js"></script>
+    <script src="utils/upcomingEventsData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        perView: 5,
+        breakpoints: {
+          1200: {
+            perView: 4,
+          },
+          1000: {
+            perView: 3,
+          },
+          650: {
+            perView: 2,
+          },
+          420: {
+            perView: 1,
+          },
+        },
+      };
+      new Glide(".glide", config).mount();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
