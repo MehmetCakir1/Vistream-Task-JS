@@ -93,13 +93,16 @@ speakersDivTwo.innerHTML = currentSpeakersTwo.map((item)=> {
 let overview=document.getElementById("overview")
 let modal=document.getElementById("modal")
 
+
 modal.style.display="none"
+
 overview.addEventListener("mouseover",function(){
     modal.style.display="block"
 })
 overview.addEventListener("mouseleave",function(){
     modal.style.display="none"
 })
+
 
 
 
