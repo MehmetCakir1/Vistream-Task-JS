@@ -5,10 +5,11 @@
 }
 /*NAVBAR*/
 nav{
-    box-shadow: 0px 3px 6px #00000029 !important;
+    box-shadow: 0px 0px 7px #009FE3 !important;
     padding: 8px 0;
     position: fixed;
     top: 0;
+    z-index: 60;
 }
 
 #mobileNavbar{
@@ -48,6 +49,9 @@ nav{
 #mobileNavbar a{
     font-size: 12px;
 }
+#mobileNavbar {
+    transition: all 1s ease-in-out;
+}
 #modal{
     top:2rem;
     left:50%;
@@ -63,6 +67,12 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+    padding-top: 5rem;
+}
+@media (max-width:420px) {
+    .header{
+        height: 550px;
+    }
 }
 @media (min-width:1400px) {
     .header{
@@ -206,7 +216,7 @@ max-width: 362px;
     font-size: 20px;
 }
 .glide__slide_div p{
-  height: 9rem;
+  height: 9.5rem;
   border-bottom: 1px solid grey;
   color: #042164;
   font-size: 17px;
@@ -235,17 +245,37 @@ max-width: 362px;
     background-color: #009FE3;
     color: #fff;
 }
+
 .glideMoreBtn button{
     border: 1px solid #1490DF;
     color: #1490DF;
     transition: all 1s ease;
+    font-size: 13px !important;
 }
 .glideMoreBtn button:hover{
     border: 1px solid #042164;
     background-color: #042164;
     color: #fff;
 }
-
+.glideBtns button{
+    font-size: 13px !important;
+}
+@media (max-width:400px) {
+    .glideBtns button{
+        font-size: 16px !important;
+    }
+    .glideMoreBtn button{
+        font-size: 16px !important;
+    }
+}
+@media (min-width:1250px) {
+    .glideBtns button{
+        font-size: 16px !important;
+    }
+    .glideMoreBtn button{
+        font-size: 16px !important;
+    }
+}
 @media (min-width:1400px) {
     .glide__slide{
         margin: 0 2rem !important;
@@ -295,3 +325,6 @@ footer{
     margin-top: 6rem !important;
 }
 
+.otherPage{
+    margin-top: 10rem;
+}

@@ -1,18 +1,29 @@
 
 /*MOBILE NAVBAR */
 let faBars=document.getElementById("faBars")
+let faTimes=document.getElementById("faTimes")
 let mobileNavbar=document.getElementById("mobileNavbar")
 
 
 
-mobileNavbar.style.display="none"
+mobileNavbar.style.transform="scale(0)"
+mobileNavbar.style.display="flex"
 
+faTimes.style.display="none"
 faBars.addEventListener("click",function(){
-  if(mobileNavbar.style.display=="none"){
-      mobileNavbar.style.display="flex"
-  }else{
-      mobileNavbar.style.display="none"
-  }
+  if(mobileNavbar.style.transform="scale(0)"){
+    mobileNavbar.style.transform="scale(1)"  
+}
+faBars.style.display="none"
+faTimes.style.display="block"
+});
+
+faTimes.addEventListener("click",function(){
+  if(mobileNavbar.style.transform="scale(1)"){
+    mobileNavbar.style.transform="scale(0)"  
+}
+faBars.style.display="flex"
+faTimes.style.display="none"
 })
 
 
@@ -90,6 +101,8 @@ speakersDivTwo.innerHTML = currentSpeakersTwo.map((item)=> {
     <button>See Bio</button>
 </div>`
 }).join('') 
+
+/*MODAL */
 
 let overview=document.getElementById("overview")
 let modal=document.getElementById("modal")

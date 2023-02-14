@@ -10,23 +10,34 @@
     <title>Vistream Webinar</title>
 </head>
 <body>
-    <nav>
+    <nav class="navBar bg-light w-100">
         <div class=" d-flex gap-3 gap-lg-5 p-3">
             <div class="d-flex justify-content-between align-items-center logoDiv ">
-                <a href="/"><img src="../assets/logo.svg" alt="logo"></a>
-                <i class="fa-solid fa-bars fa-xl d-md-none" id="faBars"></i>
+            <a href="/"><img src="../assets/logo.svg" alt="logo"></a>
+                
+            <i class="fa-solid fa-bars fa-xl d-md-none" id="faBars"></i>
+            <i class="fa-solid fa-xmark fa-2xl text-danger" id="faTimes"></i>
         </div>
         <div class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-none fs-6">
-            <a href="/" class="text-decoration-none fw-bold">HOME</a>
-            <a href="/pages/sessions.html" class="text-decoration-none fw-bold">SESSIONS</a>
-            <a href="/pages/overview.html" class="text-decoration-none fw-bold">OVERVIEW</a>
-            <a href="/pages/schedule.html" class="text-decoration-none fw-bold">SCHEDULE</a>
-            <a href="/pages/teaser.html" class="text-decoration-none fw-bold">TEASER</a>
-            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold">UPCOMING EVENTS</a>
+            <a href="/" class="text-decoration-none fw-bold"
+            >HOME</a>
+            <a href="/pages/sessions.html" class="text-decoration-none fw-bold"
+            >SESSIONS</a>
+            <div class="position-relative">
+                <a href="/pages/overview.html" class="text-decoration-none fw-bold " id="overview"
+            >OVERVIEW</a>
+            <div id="modal" class="d-none position-absolute bg-light text-center rounded-3 fs-6 p-2 border border-primary ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo dolorem ipsum laudantium saepe iste illo</div>
+            </div>
+            <a href="/pages/schedule.html" class="text-decoration-none fw-bold"
+            >SCHEDULE</a>
+            <a href="/pages/teaser.html" class="text-decoration-none fw-bold"
+            >TEASER</a>
+            <a href="/pages/upcomingEvents.html" class="text-decoration-none fw-bold"
+            >UPCOMING EVENTS</a>
         </div>
         </div>
         
-        <div id="mobileNavbar" class="d-md-flex justify-content-center align-items-center gap-3 gap-lg-5 navlinks d-md-none py-1 ">
+        <div id="mobileNavbar" class="d-md-flex flex-column justify-content-center align-items-end gap-3 gap-lg-5  d-md-none p-3 ">
             <a href="/" class="text-decoration-none fw-bold">HOME</a>
             <a href="/pages/sessions.html" class="text-decoration-none fw-bold">SESSIONS</a>
             <a href="/pages/overview.html" class="text-decoration-none fw-bold">OVERVIEW</a>
@@ -44,15 +55,9 @@
         <p class="p-0 m-0">Footer Note</p>
     </footer>
 
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/581c84170e.js" crossorigin="anonymous"></script>
-    <script src="../utils/upcomingEventsData.js"></script>
     <script src="../script.js"></script>
+    <script src="../utils/upcomingEventsData.js"></script>
 </body>
 </html>
