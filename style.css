@@ -7,7 +7,22 @@
 nav{
     box-shadow: 0px 3px 6px #00000029 !important;
     padding: 8px 0;
-    /* margin-bottom: 1rem; */
+    position: fixed;
+    top: 0;
+}
+
+#mobileNavbar{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: #232B76;
+    width: 15rem;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+#mobileNavbar a{
+    color: #fff;
 }
 @media (min-width:1300px) {
     nav{
@@ -279,3 +294,4 @@ max-width: 362px;
 footer{
     margin-top: 6rem !important;
 }
+

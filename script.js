@@ -4,6 +4,7 @@ let faBars=document.getElementById("faBars")
 let mobileNavbar=document.getElementById("mobileNavbar")
 
 
+
 mobileNavbar.style.display="none"
 
 faBars.addEventListener("click",function(){
